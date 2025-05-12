@@ -1,0 +1,45 @@
+package model;
+
+public class Product {
+    private String name;
+    private double basePrice;
+    private int stock;
+    private double currentPrice;
+
+    public Product(String name, double basePrice, int stock) {
+        this.name = name;
+        this.basePrice = basePrice;
+        this.stock = stock;
+        this.currentPrice = basePrice; // Initial price is base price
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public void setCurrentPrice(double price) {
+        this.currentPrice = price;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s - Stock: %d, Base Price: %.2f, Current Price: %.2f",
+                name, stock, basePrice, currentPrice);
+    }
+}

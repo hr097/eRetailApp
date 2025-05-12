@@ -1,20 +1,20 @@
 package model;
 
 public class Product {
-    private String name;
+    private String productName;
     private double basePrice;
     private int stock;
     private double currentPrice;
 
-    public Product(String name, double basePrice, int stock) {
-        this.name = name;
+    public Product(String productName, double basePrice, int stock) {
+        this.productName = productName;
         this.basePrice = basePrice;
         this.stock = stock;
-        this.currentPrice = basePrice; // Initial price is base price
+        this.currentPrice = basePrice; // Initial price is base price set
     }
 
     public String getName() {
-        return name;
+        return productName;
     }
 
     public double getBasePrice() {
@@ -39,7 +39,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s - Stock: %d, Base Price: %.2f, Current Price: %.2f",
-                name, stock, basePrice, currentPrice);
+        return String.format("%s - Stock: %d \nBase Price: %.2f \nCurrent Price: %.2f",
+                productName, stock, basePrice, currentPrice);
     }
 }

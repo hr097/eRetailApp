@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MainController {
 
     public static void main(String[] args) {
-        // Sample products
+        // Sample products that we have used to test out product module
         Product p1 = new Product("Computers", 2130.0, 101);
         Product p2 = new Product("IPhones", 1500.0, 34);
         Product p3 = new Product("Headphones", 170.0, 32);
